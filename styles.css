@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --background-color: #eeeeee;
+  --card-color: #ffffff;
+  --box-shadow: #73777b;
+  --profile-color: #ffe194;
+  --background-color2: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Roboto;
+}
+.summary {
+  margin: 1rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.left-section {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.section-title {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--card-color);
+  box-shadow: 2px 2px 8px var(--box-shadow);
+  border-radius: 0.2rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: 300;
+  color: var(--box-shadow);
+}
+
+.card-title {
+  font-weight: 300;
+  color: var(--box-shadow);
+}
+
+.image {
+  padding: 1rem;
+  background-color: var(--profile-color);
+  border-radius: 50%;
+  width: 50%;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-container {
+  padding-bottom: 2rem;
+  min-height: 200px;
+}
+
+.tech-skill {
+  display: inline-block;
+  background-color: var(--profile-color);
+  border-radius: 0.8rem;
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.project-section {
+  background-color: var(--background-color2);
+  box-shadow: 2px 2px 8px var(--box-shadow);
+  border-radius: 0.2rem;
+}
+
+.git-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-sections-container {
+  min-width: 30%;
+  min-height: 10vh;
+}
+
+.project-desc {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 100;
+}
+.project-circle {
+  min-width: 1rem;
+  border-radius: 60%;
+  margin-right: 0.4rem;
+  background-color: var(--profile-color);
+}
+
+.experience {
+  display: flex;
+  margin-top: 1rem;
+}
+.tenure,
+.designation {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 2px;
+}
+.vertical-bar-container {
+  display: flex;
+  margin-right: 1rem;
+  position: relative;
+}
+.vertical-bar {
+  width: 1px;
+  background-color: var(--profile-color);
+  height: 100%;
+}
+
+.vertical-circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--profile-color);
+  border-radius: 10px;
+  position: absolute;
+  left: -4px;
+}
+
+.vertical-circle-bottom {
+  width: 10px;
+  height: 10px;
+  background-color: var(--profile-color);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: -4px;
+}
+
+.experience-section {
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: var(--card-color);
+  box-shadow: 2px 2px 8px var(--box-shadow);
+  border-radius: 0.2rem;
+}
+
+.experience-section-right {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 726px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .project-sections-container {
+    min-width: 90%;
+  }
+}
